@@ -130,9 +130,9 @@ def save_data_to_files(object_id, frame_dir, filtered_lidar_data, bbox_data, cat
 if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
-    label_dir = 'data/moving_lidar/label'
-    lidar_dir = 'data/moving_lidar/lidar'
-    save_dir = 'data/moving_lidar' 
+    label_dir = 'data/labeled_lidar/label'
+    lidar_dir = 'data/labeled_lidar/lidar'
+    save_dir = 'data/labeled_lidar' 
     parser.add_argument('--label_dir', type=str, default=label_dir, help='Directory labeling result file (.json)')
     parser.add_argument('--lidar_dir', type=str, default=lidar_dir, help='Directory LiDAR data file (.bin)')
     parser.add_argument('--save_dir', type=str, default=save_dir, help='Directory to save points.bin and bbox.json')
